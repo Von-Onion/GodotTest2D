@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3snjjnq77v64"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ey4fv"]
+size = Vector2(422, 20)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_ey4fv")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(3, -32)
+disable_mode = 2
+input_pickable = true
